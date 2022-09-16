@@ -1,9 +1,11 @@
 [package]
-name = "basic-coin"
-version = "0.1.0"
+name = 'BasicCoin'
+version = '1.0.0'
 
-[dependencies]
-MoveStdlib = { git = "https://github.com/move-language/move.git", subdir = "language/move-stdlib", rev = "main" }
+[dependencies.AptosFramework]
+git = 'https://github.com/aptos-labs/aptos-core.git'
+rev = 'main'
+subdir = 'aptos-move/framework/aptos-framework'
 
 [addresses]
-std =  "0x1"
+BasicCoin = "eebd586a2dee409aaca86d6fb968260832b1d59ead29f0b7c555e566b610cb4e"
