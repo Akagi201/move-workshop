@@ -1,0 +1,11 @@
+[package]
+name = 'hello'
+version = '1.0.0'
+
+[dependencies.AptosFramework]
+git = 'https://github.com/aptos-labs/aptos-core.git'
+rev = 'main'
+subdir = 'aptos-move/framework/aptos-framework'
+
+[addresses]
+hello = "57c9aa4569abb5e39ee5a456d9b61a1d399f42dc25e8839e9b30042768368e58"
