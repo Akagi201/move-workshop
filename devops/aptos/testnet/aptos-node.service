@@ -1,0 +1,16 @@
+[Unit]
+Description=aptos-node
+After=network-online.target
+
+[Service]
+User=akagi201
+WorkingDirectory=/home/akagi201/Documents/src/github.com/aptos-labs/aptos-core
+TimeoutStartSec=1
+Type=simple
+ExecStart=/home/akagi201/Documents/src/github.com/aptos-labs/aptos-core/target/release/aptos-node -f /home/akagi201/Documents/src/github.com/aptos-labs/aptos-core/fullnode.yaml
+Restart=always
+RestartSec=5s
+LimitNOFILE=infinity
+
+[Install]
+WantedBy=multi-user.target
