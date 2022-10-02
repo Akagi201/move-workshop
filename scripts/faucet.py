@@ -18,10 +18,12 @@ def send_request(proxy):
                 proxies=proxies,
                 verify=False
             )
+            if response.status_code != 200:
+                break
             print(response.status_code, response.content)
         except requests.exceptions.RequestException as e:
-            print(e)
-            return
+            print(proxy, e)
+            break
 
 
 def parse_args():
