@@ -2,9 +2,19 @@
 
 move language workshop
 
+## Move docs
+
+* <https://github.com/move-cn/letsmove>
+
 ## Aptos
 
 * docs: <https://aptos.dev/en>
+
+### Setup CLI
+
+* <https://aptos.dev/en/build/cli/setup-cli>
+* Shell COmpletion: `aptos config generate-shell-completions --shell zsh --output-file ~/.oh-my-zsh/completions/_aptos`
+* `aptos config set-global-config --config-type global`
 
 ## Sui
 
